@@ -18,6 +18,16 @@ A beautiful, modern weather application built with **React Native** and **Expo**
 - 💨 **Air Quality Index** - AQI, PM2.5, and PM10 readings
 - 🎨 **Modern UI** - Glassmorphism design with dynamic backgrounds
 
+## 📸 Screenshots
+
+![alt text](screenshots/1.jpg)
+
+![alt text](screenshots/2.jpg)
+
+![alt text](screenshots/3.jpg)
+
+![alt text](screenshots/4.jpg)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
