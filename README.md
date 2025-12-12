@@ -1,50 +1,121 @@
-# Welcome to your Expo app 👋
+# 🌤️ Weather App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful, modern weather application built with **React Native** and **Expo**. Features a stunning glassmorphism UI design with real-time weather data, hourly forecasts, and air quality information.
 
-## Get started
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/NativeWind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-1. Install dependencies
+## ✨ Features
 
+- 📍 **GPS Location Detection** - Automatically fetches weather for your current location
+- 🔍 **City Search** - Search weather for any city worldwide (including small villages!)
+- 🌡️ **Real-time Weather** - Temperature, humidity, pressure, wind speed
+- ⏰ **24-Hour Forecast** - Hourly weather predictions with icons
+- 🌅 **Sunrise & Sunset** - Daily sun timings
+- 🌙 **Day/Night Mode** - Dynamic UI based on local time
+- 💨 **Air Quality Index** - AQI, PM2.5, and PM10 readings
+- 🎨 **Modern UI** - Glassmorphism design with dynamic backgrounds
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Expo Go app on your mobile device
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/weather-app.git
+   cd weather-app
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Start the development server**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Scan the QR code** with Expo Go (Android) or Camera app (iOS)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Built With
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **[React Native](https://reactnative.dev/)** - Cross-platform mobile framework
+- **[Expo](https://expo.dev/)** - Development platform
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[NativeWind](https://www.nativewind.dev/)** - TailwindCSS for React Native
+- **[Open-Meteo API](https://open-meteo.com/)** - Free weather data (no API key needed!)
+- **[Expo Location](https://docs.expo.dev/versions/latest/sdk/location/)** - GPS functionality
+- **[Expo Linear Gradient](https://docs.expo.dev/versions/latest/sdk/linear-gradient/)** - Gradient overlays
 
-## Get a fresh project
+## 📱 APIs Used
 
-When you're ready, run:
+| API | Purpose | Key Required |
+|-----|---------|--------------|
+| [Open-Meteo Weather](https://open-meteo.com/) | Weather data | ❌ No |
+| [Open-Meteo Air Quality](https://open-meteo.com/) | AQI data | ❌ No |
+| [Open-Meteo Geocoding](https://open-meteo.com/) | City search | ❌ No |
+| [Nominatim (OpenStreetMap)](https://nominatim.openstreetmap.org/) | Reverse geocoding | ❌ No |
 
-```bash
-npm run reset-project
+## 📂 Project Structure
+
+```
+weather-app/
+├── app/
+│   ├── (tabs)/
+│   │   ├── _layout.tsx
+│   │   ├── index.tsx      # Main weather screen
+│   │   └── explore.tsx
+│   ├── _layout.tsx
+│   └── modal.tsx
+├── components/
+├── constants/
+├── hooks/
+├── assets/
+├── app.json
+├── package.json
+└── tailwind.config.js
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📦 Building for Production
 
-## Learn more
+### Android APK (for sharing/testing)
+```bash
+eas build -p android --profile preview
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Android AAB (for Play Store)
+```bash
+eas build -p android --profile production
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### iOS (requires Apple Developer Account - $99/year)
+```bash
+eas build -p ios --profile production
+```
 
-## Join the community
+## 🤝 Contributing
 
-Join our community of developers creating universal apps.
+Contributions are welcome! Feel free to fork and submit a PR.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Weather data by [Open-Meteo](https://open-meteo.com/)
+- Icons by [Ionicons](https://ionic.io/ionicons)
+- Background images from [Unsplash](https://unsplash.com/)
+
+---
+
+⭐ **Star this repo if you found it helpful!**
